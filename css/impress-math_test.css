@@ -209,6 +209,7 @@ a:focus {
 }
 
 .step .code {
+    font-family: 'PT Sans', 'IPAex Sans', sans-serif;
     padding: 10px;
     margin-bottom: 10px;
     line-height: 150%;
@@ -295,6 +296,7 @@ a:focus {
 }
 
 .slide .code {
+    font-family: 'PT Sans', 'IPAex Sans', sans-serif;
     padding: 10px;
     margin-bottom: 10px;
     line-height: 150%;
