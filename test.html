@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <title>impress.js and MathJax</title>
+    
+    <meta name="impress.js and MathJax" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    
+    <meta name="author" content="Takayuki Yano" />
+    
+    <link href="css/fontstyle.css" rel="stylesheet">
+    <link href="css/impress-math_test.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!-- for MathJax -->
+    <script type="text/javascript"src="./MathJax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] } });</script>
+</head>
+
+<body class="impress-not-supported">
+
+<!-- IMPRESS -->
+<div id="impress">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+    
+    <!-- タイトル -->
+    <div id="main_title" class="step" data-x="0" data-y="0" data-z="0" data-scale="6">
+        <h1>
+            "impress.js"と"MathJax"<br>を用いた<br>プレゼンテーションツール
+        </h1>
+        <h1 id="author">
+            KouQ7802
+        </h1>
+    </div>
+    
+    <!-- impress.jsとは -->
+    <div id="about_impress" class="step slide" data-x="4500" data-y="0" data-z="0" data-scale="4">
+        <h1>
+            "impress.js"とは
+        </h1>
+        <p>
+            CSS3を活用したオープンソース(MITライセンス)のプレゼンテーションJavaScriptライブラリ。<br>
+            <a href="http://prezi.com">prezi.com</a>のようなスライドを作ることが可能。
+        </p>
+        <p>
+            ソースコードは<a href="http://github.com/bartaz/impress.js">こちら</a><br>
+            デモは<a href="http://impress.github.io/impress.js/#/bored">こちら</a>
+        </p>
+        <Span Style="font-size: 5px"><br></Span>
+        <h2>メリット</h2>
+        <ul>
+            <li>preziのようにx,y軸の移動だけでなく、z軸の移動も可能<br>
+                $\Longrightarrow$表現の幅が広い
+            <li>ファイルが軽い、ローカル環境で作成,確認ができるといったメリットがある</li>
+        </ul>
+        <h2>デメリット</h2>
+        <ul >
+            <li>スライドの位置を座標で入力するのでしんどい(配置を考えるのが)</li>
+            <li>専門的な知識が少し必要(HTML5, CSS3)</li>
+        </ul>
+    </div>
+    
+    <!-- MathJaxとは -->
+    <div id="about_MathJax" class="step slide" data-x="8500" data-y="0" data-z="0" data-scale="4">
+        <h1>
+            "MathJax"とは
+        </h1>
+        <p>
+            $\LaTeX$の形式で記述された数式をWebブラウザ上で表示するJavaScriptライブラリ。<br>
+            Webページでの数式表示のスタンダード。<br>
+            ただ、環境によっては重くなるらしい。<br>
+            ホームページは<a href="https://www.mathjax.org">こちら</a><br>
+            GitHubのページは<a href="https://github.com/mathjax/MathJax">こちら</a><br>
+            なお、<a href="https://www.mathjax.org/#modal-livedemo">DEMOページ</a>で、試すことも可能。
+        </p>
+        <img src="./img/mathjax.png" width="500px" style="position:absolute;bottom:50px;right:50px;">
+    </div>
+    
+    <!-- math prezen -->
+    <div id="math_prezen1" class="step" data-x="0" data-y="2500" data-z="0" data-scale="5">
+        <q>
+            数式をプレゼンで使いたい...<br>
+        </q>
+    </div>
+    <div id="math_prezen2" class="step" data-x="0" data-y="3000" data-z="200" data-scale="5">
+        <q>
+            数式は$\LaTeX$で<b>綺麗</b>に表示したい...<br>
+        </q>
+    </div>
+    <div id="math_prezen3" class="step" data-x="0" data-y="3500" data-z="400" data-scale="5">
+        <q>
+            <b>かっこいい</b>スライドを作りたい...<br>
+        </q>
+    </div>
+    <div id="math_prezen4" class="step" data-x="0" data-y="4000" data-z="600" data-scale="5">
+        <q>
+            そんな<b>あなたに...</b><br>
+        </q>
+    </div>
+    <div id="math_prezen5" class="step" data-x="0" data-y="3000" data-z="-3000" data-scale="1" data-rotate-z="0" data-rotate-y="0" data-rotate-x="-90">
+        <h1 class="impact">
+            <b>"impress.js"<br> $\times$<br> "MathJax"</b>
+        </h1>
+    </div>
+    
+    <!-- impress+MathJax-->
+    <div id="goal" class="step" data-x="4500" data-y= 3000 data-z="0" data-scale="4">
+        <h1>
+            "impress.js" $\times$ "MathJax" 目標
+        </h1>
+        <ol>
+            <li>動作が軽快</li>
+            <li>日本語が使える</li>
+            <li>オフラインでも使える</li>
+        </ol>
+    </div>
+    
+    <!-- How to make -->
+    <div id="howtomake1" class="step" data-x="8500" data-y="3500" data-z="0" data-scale="4">
+        <h1>
+            作成準備
+        </h1>
+        <h2>
+            "impress.js"のDL
+        </h2>
+        <p>
+            <a href="https://github.com/impress/impress.js">impress.jsのGitHubリポジトリ</a>から"Download ZIP"で全ファイルをDL("git clone"ではimpress.jsしかDLできなかったので...)<br>
+            "impress.js"の"index.html"をベースに作っていきます。
+            
+        </p>
+        <h2>
+            "MathJax"のDL
+        </h2>
+        <p>
+            <a href="https://github.com/mathjax/MathJax">MathJaxのGitHubリポジトリ</a>からMathJaxをDLして、impress.jsのフォルダの適当な場所に置く。
+        </p>
+    </div>
+    
+    <div id="howtomake2" class="step" data-x="12500" data-y="3500" data-z="0" data-scale="4">
+        <h1>
+            MathJaxに命を吹き込む
+        </h1>
+        <p>
+            impress.jsのindex.htmlの &lt head &gt ... &lt /head &gt に以下を加えます。
+        </p>
+        <pre class="code"><code>&lt script type="text/javascript"src="MathJaxへのパス/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt &lt /script &gt<br>&lt script type="text/x-mathjax-config" &gt MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] } });&lt /script &gt</code></pre>
+        <p>
+            これでMathJaxが使えるようになった。
+        </p>
+    </div>
+    
+    <div id="howtomake3" class="step" data-x="0" data-y="7000" data-z="0" data-scale="4">
+        <h1>
+            MathJaxを軽量化する
+        </h1>
+        <p>
+            MathJaxには30,000を超える数式のpng画像が含まれています。しかし、この画像は古いブラウザに対応するためのものでよほど古いブラウザで使用しない限り、消してしまっても構いません。なので、今回は消してしまいます。
+            MathJaxのfontsフォルダ以下のpng画像をすべて削除します。
+            これで大分動作が軽くなります。
+        </p>
+    </div>
+    
+    <div id="howtomake4" class="step" data-x="4500" data-y="7000" data-z="0" data-scale="4">
+        <h1>
+            フォントの設定変更
+        </h1>
+        <h2>
+            Webフォントをローカルフォントに変更
+        </h2>
+        <ol>
+            <li><a href="https://www.google.com/fonts">Google Fonts</a>で"Open Sans", "PT Sans", "PT Serif" を検索,ダウンロードして、任意の場所に保存する</li>
+            <li>cssに以下の内容を"Open Sans", "PT Sans", "PT Serif"のそれぞれに対して記述する(以下は"Open Sans"の例)</li>
+        </ol>
+        <pre class="code"><code>@font-face {
+    font-family: Open Sans;
+    src: url('Open_Sansへのパス/OpenSans-Regular.ttf') format("truetype");
+}</code></pre>
+    </div>
+    
+    <div id="howtomake5" class="step" data-x="8500" data-y="7000" data-z="0" data-scale="4">
+        <h1>
+            日本語フォントを追加
+        </h1>
+        <p>
+            IPAexフォントを<a href="http://ipafont.ipa.go.jp">ここ</a>からDLし任意の場所に保存し、cssに先ほどと同じようにfont-fmilyを追加する。
+        </p>
+        <pre class="code"><code>@font-face {
+    font-family: IPAex Mincho;
+    src: url('IPAexへのパス/ipaexm.ttf') format("truetype");
+}</code></pre>
+    </div>
+    <div id="howtomake6" class="step" data-x="12500" data-y="7000" data-z="0" data-scale="4">
+        <p>
+            index.htmlの中の"Open Sans", "PT Sans", "PT Serif"と書かれているところを探し出し、"Sans"と書いてあるところには"IPAexゴシック"を、"Serif"と書いてあるところには"IPAex明朝"を追加する。
+        </p>
+        <h2>例</h2>
+        <pre class="code"><code>font-family: 'PT Serif', 'IPAex Mincho', georgia, serif;
+        font-family: 'PT Sans', 'IPAex Gothic', sans-serif;</code></pre>
+        <p>ただし、'IPAex Mincho','IPAex Gothic'にはcssに記述した名前で書く。</p>
+    </div>
+    <!--<div id="math_prezen6" class="step" data-x="0" data-y="3000" data-z="100" data-scale="1">
+        <p></p>
+    <div>
+        <pre class="code"><code>&lt script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" &gt &lt /script &gt</code></pre>
+        
+        <p>
+            を記述するだけで使えるようになるが、ローカル環境で使う場合は<a href="https://github.com/mathjax/MathJax">MathJaxのGitHubページ</a>からダウンロードして、それを任意の場所に保存し、&lt head &gt ... &lt /head &gt 部分に
+        </p>
+        
+        <pre class="code"><code>&lt script type="text/javascript"src="./MathJax-master/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt &lt /script &gt<br>&lt script type="text/x-mathjax-config" &gt MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] } });&lt /script &gt</code></pre>
+        
+        <p>
+            と記述することで使えるようになる。
+        </p>
+    </div>
+    -->
+    <div id="overview" class="step" data-x="6000" data-y="3500" data-scale="15">
+    </div>
+</div>
+<!-- IMPRESS -->
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

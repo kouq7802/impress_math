@@ -57,8 +57,16 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
+ul li {
+    list-style: disc;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+ol {
+    list-style: decimal;
+    padding: 0px;
+    margin-left: auto;
 }
 blockquote, q {
     quotes: none;
@@ -175,9 +183,38 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
+    font-family: 'PT Serif', 'IPAex Serif', georgia, serif;
+    font-size: 36px;
     line-height: 1.5;
+}
+
+.step h1 {
+    font-family: 'PT Serif', 'IPAex Serif', serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.step h2 {
+    font-family: 'PT Serif', 'IPAex Serif', 'serif';
+    font-size: 40px;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+}
+
+
+.step .impact {
+    font-size: 100px;
+    text-align: center;
+}
+
+.step .code {
+    padding: 10px;
+    margin-bottom: 10px;
+    line-height: 150%;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    word-wrap: break-word;
 }
 
 /*
@@ -221,10 +258,23 @@ a:focus {
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', 'IPAex Serif', Arial, sans-serif;
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -1px;
+}
+
+.slide h1 {
+    font-family: 'PT Sans', 'IPAex Sans', sans-serif;
+    font-size: 60px;
+    margin-bottom: 0.5em;
+}
+
+.slide h2 {
+    font-family: 'PT Serif', 'IPAex Serif', 'serif';
+    font-size: 40px;
+    margin-bottom: 0.4em;
+    font-weight: bold;
 }
 
 .slide q {
@@ -239,6 +289,22 @@ a:focus {
     white-space: nowrap;
 }
 
+.slide ul{
+    font-family: 'PT Sans', 'IPAex Sans', sans-serif;
+    font-size: 25px;
+}
+
+.slide .code {
+    padding: 10px;
+    margin-bottom: 10px;
+    line-height: 150%;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    color:black;
+    background-color: #e0e0e0;
+    word-wrap: break-word;
+}
+
 /*
     And now we start to style each step separately.
 
@@ -251,7 +317,8 @@ a:focus {
 */
 
 #title {
-    padding: 0;
+    padding: 0
+    text-align: center;
 }
 
 #title .try {
@@ -267,8 +334,26 @@ a:focus {
     transform:         translateZ(20px);
 }
 
+#main_title h1 {
+    font-size: 60px;
+    text-align: center;
+    
+    /*-webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);*/
+}
+
+#main_title #author {
+    font-size: 36px;
+    padding-top: 2em;
+    text-align: center;
+}
+
 #title h1 {
     font-size: 190px;
+    text-align: center;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -518,6 +603,17 @@ a:focus {
 */
 #overview { display: none }
 
+#about_impress{
+    /*width: 900px;
+    padding-bottom: 300px;*/
+    background-image: url("../img/impress_demo.jpg");
+    background-size: 30%;
+    /*background-color: rgba(255,255,255,1);*/
+    background-position: top right; 
+    background-repeat: no-repeat;
+}
+
+
 /*
     We also make other steps visible and give them a pointer cursor using the
     `impress-on-` class.
@@ -708,7 +804,6 @@ a:focus {
     For Mathjax
     ===========
     from http://www.coma-tech.com/archives/288/
-*/
 .step {
     width: 1024px;
     padding: 40px;
@@ -748,4 +843,4 @@ a:focus {
     text-align:center;
     font-size:30px;
     font-weight: bold;
-}
+}*/
