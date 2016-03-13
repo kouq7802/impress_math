@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Open Sans;
+    src: url('../static/Open_Sans/OpenSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: PT Sans;
+    src: url('../static/PT_Sans/PT_Sans-Web-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: PT Serif;
+    src: url('../static/PT_Serif/PT_Serif-Web-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: IPAex Sans;
+    src: url('../static/IPAex/ipaexg.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: IPAex Serif;
+    src: url('../static/IPAex/ipaexm.ttf') format("truetype");
+}
